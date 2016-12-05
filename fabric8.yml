@@ -1,0 +1,11 @@
+---
+pipeline: "maven/CanaryRelease/Jenkinsfile"
+buildName: "test-war"
+codeReview: false
+links:
+  Git: "http://192.168.140.133:32477/gogsadmin/test-war.git"
+  Job: "http://192.168.140.133:30465/job/test-war"
+  Testing: "http://10.0.0.7:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+useLocalFlow: true
